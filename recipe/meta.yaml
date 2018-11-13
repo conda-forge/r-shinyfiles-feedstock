@@ -1,4 +1,4 @@
-{% set version = '0.7.1' %}
+{% set version = "0.7.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,7 +13,7 @@ source:
     - https://cran.r-project.org/src/contrib/shinyFiles_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/shinyFiles/shinyFiles_{{ version }}.tar.gz
 
-  sha256: 35eb6fec64ad5f3662ef65ea4f61cc9f823b0ebaa94a4c567feb0b7e68026fb1
+  sha256: a5bd53a9b3332212dc33c8de24cca12875d4c1012524695e7ee2749378968c36
 
 build:
   number: 0
