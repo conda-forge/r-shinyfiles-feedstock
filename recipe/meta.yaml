@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "0.7.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,11 +13,11 @@ source:
     - https://cran.r-project.org/src/contrib/shinyFiles_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/shinyFiles/shinyFiles_{{ version }}.tar.gz
 
-  sha256: 710c8a6191aaf336379bc748daff1160d0d2858e2aee0d98e2ad48e7121d5a05
+  sha256: 0ae57ad823bb379f79ba4b8b189385ee79c08ce0ac0f760e8349551848aa8384
 
 build:
   noarch: generic
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -53,14 +53,9 @@ about:
     to the file system without the need to "download" files to a temporary location.
     Both file and folder selection as well as file saving is available.
   license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+
 extra:
    recipe-maintainers:
     - conda-forge/r
-    - dpryan79
-    - MathiasHaudgaard
-    - FrodePedersen
-    - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
