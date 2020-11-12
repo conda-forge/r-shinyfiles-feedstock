@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=shinyFiles
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinyfiles-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides functionality for client-side navigation of the server side file system in shiny apps. In case the app is running locally this gives the user direct access to the file system without the need to "download" files to a temporary location. Both file and folder selection as well as file saving is available.
-
-
 
 Current build status
 ====================
